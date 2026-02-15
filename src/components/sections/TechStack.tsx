@@ -77,48 +77,48 @@ export function TechStack() {
     return (
         <section id="technology" className="py-24 bg-black/20 border-t border-white/5 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col md:flex-row gap-12 items-center">
-                    <div className="flex-1 space-y-6 relative z-10">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white">
+                <div className="flex flex-col lg:flex-row gap-16 lg:gap-12 items-center">
+                    <div className="w-full lg:flex-1 space-y-8 lg:space-y-6 relative z-10">
+                        <h2 className="text-4xl md:text-4xl font-bold text-white">
                             The <span className="text-phrelis-purple">Phrelis Stack</span>
                         </h2>
-                        <p className="text-slate-400 leading-relaxed">
+                        <p className="text-slate-400 leading-relaxed text-lg">
                             Built on a foundation of high-performance Python and React.
                             Our architecture ensures sub-millisecond latency for critical decision-making. It&apos;s designed for speed.
                         </p>
 
-                        <ul className="space-y-4">
+                        <ul className="space-y-6">
                             <li className="flex items-start gap-4">
                                 <div className="mt-1 p-1 bg-phrelis-purple/20 rounded text-phrelis-purple">
                                     <Database className="w-5 h-5" />
                                 </div>
-                                <div>
-                                    <h4 className="font-bold text-white">FastAPI Backend</h4>
-                                    <p className="text-sm text-slate-500">Async-first architecture handling thousands of concurrent requests.</p>
+                                <div className="flex-1">
+                                    <h4 className="font-bold text-white text-lg">FastAPI Backend</h4>
+                                    <p className="text-slate-500">Async-first architecture handling thousands of concurrent requests.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4">
                                 <div className="mt-1 p-1 bg-phrelis-blue/20 rounded text-phrelis-blue">
                                     <Cpu className="w-5 h-5" />
                                 </div>
-                                <div>
-                                    <h4 className="font-bold text-white">190-Bed State Machine</h4>
-                                    <p className="text-sm text-slate-500">Deterministic tracking of every bed&apos;s status (occupied, cleaning, available).</p>
+                                <div className="flex-1">
+                                    <h4 className="font-bold text-white text-lg">190-Bed State Machine</h4>
+                                    <p className="text-slate-500">Deterministic tracking of every bed&apos;s status (occupied, cleaning, available).</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4">
                                 <div className="mt-1 p-1 bg-green-500/20 rounded text-green-500">
                                     <Network className="w-5 h-5" />
                                 </div>
-                                <div>
-                                    <h4 className="font-bold text-white">Sentinel Flow Algorithm</h4>
-                                    <p className="text-sm text-slate-500">Proprietary graph traversal for optimal patient routing.</p>
+                                <div className="flex-1">
+                                    <h4 className="font-bold text-white text-lg">Sentinel Flow Algorithm</h4>
+                                    <p className="text-slate-500">Proprietary graph traversal for optimal patient routing.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <div className="flex-1 w-full h-[500px] relative">
+                    <div className="w-full lg:flex-1 h-[400px] md:h-[500px] relative">
                         {/* 3D Scene */}
                         <Canvas camera={{ position: [5, 2, 5], fov: 45 }}>
                             <ambientLight intensity={0.5} />

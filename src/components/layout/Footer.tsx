@@ -25,18 +25,16 @@ export function Footer() {
                 <div>
                     <h4 className="text-white font-semibold mb-4">Platform</h4>
                     <ul className="space-y-2 text-sm text-slate-400">
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">Sentinel AI</a></li>
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">Command Centre</a></li>
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">Inventory Forecast</a></li>
+                        <li className="text-slate-500">Sentinel AI (Internal)</li>
+                        <li className="text-slate-500">Command Centre (v0.8)</li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 className="text-white font-semibold mb-4">Company</h4>
                     <ul className="space-y-2 text-sm text-slate-400">
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">About</a></li>
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">Careers</a></li>
-                        <li><a href="#" className="hover:text-phrelis-blue transition-colors">Contact</a></li>
+                        <li className="text-slate-500">Phrelis Inc.</li>
+                        <li className="text-slate-500">Strategic Ops</li>
                     </ul>
                 </div>
             </div>

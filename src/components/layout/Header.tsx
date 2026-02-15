@@ -27,10 +27,10 @@ export function Header() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-                isScrolled && "bg-phrelis-charcoal/80 backdrop-blur-md border-white/10"
+                isScrolled ? "bg-phrelis-charcoal/80 backdrop-blur-md border-white/10" : "bg-transparent"
             )}
         >
-            <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
                     <div className="w-8 h-8 rounded-lg bg-phrelis-blue/20 flex items-center justify-center border border-phrelis-blue/50 group-hover:bg-phrelis-blue/30 transition-colors">
@@ -52,9 +52,6 @@ export function Header() {
                             {item.name}
                         </Link>
                     ))}
-                    <button className="px-5 py-2 rounded-full bg-phrelis-blue/10 border border-phrelis-blue/20 text-phrelis-blue text-sm font-medium hover:bg-phrelis-blue/20 transition-all">
-                        Access Portal
-                    </button>
                 </nav>
 
                 {/* Mobile Menu Toggle */}
@@ -68,8 +65,8 @@ export function Header() {
 
             {/* Mobile Nav */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-phrelis-charcoal border-b border-white/10">
-                    <div className="px-6 py-4 space-y-4">
+                <div className="md:hidden bg-phrelis-charcoal/95 backdrop-blur-lg border-b border-white/10 absolute top-full left-0 right-0">
+                    <div className="px-6 py-8 space-y-6">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
@@ -80,9 +77,6 @@ export function Header() {
                                 {item.name}
                             </Link>
                         ))}
-                        <button className="w-full mt-4 px-5 py-2 rounded-full bg-phrelis-blue/10 border border-phrelis-blue/20 text-phrelis-blue text-sm font-medium hover:bg-phrelis-blue/20 transition-all">
-                            Access Portal
-                        </button>
                     </div>
                 </div>
             )}

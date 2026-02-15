@@ -1,7 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
 import { SentinelAdvantage } from "@/components/sections/SentinelAdvantage";
 import { Solutions } from "@/components/sections/Solutions";
 import { TechStack } from "@/components/sections/TechStack";
@@ -14,7 +13,7 @@ export default function Home() {
       <Header />
 
       <Hero />
-      <TrustBar />
+
       <SentinelAdvantage />
 
       <Solutions />

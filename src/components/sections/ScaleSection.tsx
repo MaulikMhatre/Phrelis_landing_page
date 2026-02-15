@@ -64,10 +64,10 @@ export function ScaleSection() {
                 </Canvas>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full pointer-events-none">
-                <div className="max-w-sm ml-auto text-right pointer-events-auto">
-                    <Card glow className="bg-black/80 backdrop-blur-md border-phrelis-blue/30 p-8">
-                        <h2 className="text-3xl font-bold text-white mb-4">
+            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full flex justify-center lg:justify-end">
+                <div className="max-w-md w-full pointer-events-auto">
+                    <Card glow className="bg-black/80 backdrop-blur-md border-phrelis-blue/30 p-6 md:p-8">
+                        <h2 className="text-4xl md:text-3xl font-bold text-white mb-4">
                             City-Wide <br /><span className="text-phrelis-blue">Scale</span>
                         </h2>
                         <p className="text-slate-400 mb-6">

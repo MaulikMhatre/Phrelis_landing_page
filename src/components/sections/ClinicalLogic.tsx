@@ -27,7 +27,7 @@ export function ClinicalLogic() {
                         CLINICAL DECISION SUPPORT
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                         &quot;Phrelis isn&apos;t just software; it&apos;s a <span className="text-phrelis-blue">second opinion</span> that never sleeps.&quot;
                     </h2>
 
@@ -62,7 +62,7 @@ export function ClinicalLogic() {
                             <div className="text-xs text-slate-500">v4.2.0 • Live</div>
                         </div>
 
-                        <div className="p-6 space-y-6 min-h-[300px]">
+                        <div className="p-4 md:p-6 space-y-6 min-h-[300px]">
                             {chatHistory.map((msg, i) => (
                                 <motion.div
                                     key={i}
