@@ -32,12 +32,9 @@ export function Header() {
         >
             <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="w-8 h-8 rounded-lg bg-phrelis-blue/20 flex items-center justify-center border border-phrelis-blue/50 group-hover:bg-phrelis-blue/30 transition-colors">
-                        <span className="text-phrelis-blue font-bold">P</span>
-                    </div>
-                    <span className="text-xl font-bold tracking-tight text-white">
-                        Phrelis<span className="text-phrelis-blue">OS</span>
+                <Link href="/" className="flex items-center gap-3 group">
+                    <span className="text-3xl md:text-5xl font-bold tracking-wider text-white font-pixel">
+                        PHRELIS<span className="text-phrelis-blue">OS</span>
                     </span>
                 </Link>
 

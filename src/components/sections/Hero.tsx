@@ -5,7 +5,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 export function Hero() {
     return (
-        <section className="relative h-screen min-h-[600px] w-full overflow-hidden bg-black flex items-center justify-center">
+        <section className="relative h-screen w-full overflow-hidden bg-black flex items-center justify-center">
             {/* Full Screen Video Background */}
             <div className="absolute inset-0 z-0">
                 <video
@@ -13,28 +13,28 @@ export function Hero() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover opacity-60 md:opacity-80"
+                    className="w-full h-full object-cover opacity-80"
                     src="/videos/hero-heart.mp4"
                 />
                 {/* Cinematic Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)]" />
             </div>
 
             {/* Centered Content */}
-            <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-6 md:space-y-8">
+            <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="space-y-4 md:space-y-6"
+                    className="space-y-6"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-phrelis-blue/30 bg-black/60 backdrop-blur-md text-phrelis-blue text-[10px] md:text-sm font-mono tracking-wider shadow-[0_0_15px_rgba(0,242,255,0.2)]">
-                        <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-phrelis-blue animate-pulse shadow-[0_0_10px_#00f2ff]" />
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-phrelis-blue/30 bg-black/60 backdrop-blur-md text-phrelis-blue text-sm font-mono tracking-wider shadow-[0_0_15px_rgba(0,242,255,0.2)]">
+                        <span className="w-2 h-2 rounded-full bg-phrelis-blue animate-pulse shadow-[0_0_10px_#00f2ff]" />
                         SYSTEM ONLINE
                     </div>
 
-                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-[1.1] text-white tracking-tight drop-shadow-2xl">
+                    <h1 className="text-6xl md:text-8xl font-bold leading-tight text-white tracking-tight drop-shadow-2xl">
                         Automating the <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-phrelis-blue via-white to-phrelis-purple animate-gradient">
                             Pulse
@@ -42,9 +42,9 @@ export function Hero() {
                         of Healthcare.
                     </h1>
 
-                    <p className="text-lg md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light px-4">
+                    <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
                         The central nervous system for potential modern enterprises.
-                        <span className="block mt-2 text-slate-400 text-sm md:text-base">Integrating Clinical AI, Operations, and Finance into one Sentinel.</span>
+                        <span className="block mt-2 text-slate-400">Integrating Clinical AI, Operations, and Finance into one Sentinel.</span>
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">

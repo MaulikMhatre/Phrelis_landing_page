@@ -2,7 +2,8 @@
 
 :root {
   /* Brand Colors */
-  --phrelis-charcoal: #020617; /* Slate-950 for deeper blacks */
+  --phrelis-charcoal: #020617;
+  /* Slate-950 for deeper blacks */
   --phrelis-blue: #00f2ff;
   --phrelis-purple: #8A2BE2;
   --slate-900: #0f172a;
@@ -23,6 +24,7 @@
   --color-slate-900: var(--slate-900);
   --color-slate-800: var(--slate-800);
 
+  --font-pixel: var(--font-pixel);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }

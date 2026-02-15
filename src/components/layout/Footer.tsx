@@ -8,12 +8,9 @@ export function Footer() {
 
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div className="col-span-1 md:col-span-2 space-y-4">
-                    <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded bg-phrelis-blue/20 flex items-center justify-center border border-phrelis-blue/50">
-                            <span className="text-phrelis-blue text-xs font-bold">P</span>
-                        </div>
-                        <span className="text-lg font-bold text-white">
-                            Phrelis<span className="text-phrelis-blue">OS</span>
+                    <div className="flex items-center gap-3">
+                        <span className="text-2xl md:text-3xl font-bold text-white font-pixel tracking-wider">
+                            PHRELIS<span className="text-phrelis-blue">OS</span>
                         </span>
                     </div>
                     <p className="text-slate-400 text-sm max-w-sm">

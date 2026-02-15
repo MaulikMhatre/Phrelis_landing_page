@@ -16,9 +16,9 @@ export function Solutions() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 auto-rows-auto md:auto-rows-[300px]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
                     {/* Emergency & ICU - Large Card */}
-                    <Card glow className="md:col-span-2 relative overflow-hidden group p-6 md:p-8">
+                    <Card glow className="md:col-span-2 relative overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-br from-phrelis-blue/5 to-transparent transition-opacity opacity-0 group-hover:opacity-100" />
                         <div className="relative z-10 h-full flex flex-col justify-between">
                             <div>
@@ -53,7 +53,7 @@ export function Solutions() {
                     </Card>
 
                     {/* Inventory & Pharmacy */}
-                    <Card glow className="relative overflow-hidden group p-6 md:p-8">
+                    <Card glow className="relative overflow-hidden group">
                         <div className="h-full flex flex-col">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="p-2 bg-phrelis-purple/20 rounded-lg text-phrelis-purple">
@@ -81,7 +81,7 @@ export function Solutions() {
                     </Card>
 
                     {/* Command Centre */}
-                    <Card glow className="md:col-span-3 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 group p-6 md:p-8">
+                    <Card glow className="md:col-span-3 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 group">
                         <div className="flex-1 p-2">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="p-2 bg-blue-500/20 rounded-lg text-blue-400">
